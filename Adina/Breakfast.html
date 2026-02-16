@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakfast Menu - Nestlagos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Breakfast.css">
+    <script src="Breakfast.js" defer></script>
+<body>
+    <!-- Header -->
+   <header class="main-header">
+        <div class="container">
+
+            <div class="logo">
+                <img src="./Image/WhatsApp Image 2026-01-20 at 18.35.47.jpeg" alt="Adina Logo" class="logo-img">
+            </div>
+            <div class="header-content">
+                <a href="home.html" class="logo">ADINA<span>UYO</span></a>
+                
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Breakfast.html" class="active">Menu</a></li>
+                        <li><a href="private dinning.html">Private Dining</a></li>
+                        <li><a href="Reservation.html">Reservations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <a href="#" class="reservation-btn">Find a Table</a>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="divider-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                
+                <h1 class="hero-title serif-font">BREAKFAST</h1>
+                
+                <p class="hero-subtitle">Enjoy Our perfectly curated dishes</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Navigation -->
+   <section class="menu-categories">
+        <div class="container">
+            
+            <div class="categories-grid">
+                <div class="category-card">
+                    <a href="Breakfast.html">
+                        <img src="./Image/breakfast.png" alt="Breakfast">
+                        <h3>Breakfast</h3>
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="lunch.html">
+                        <img src="./Image/lunch.png" alt="Lunch">
+                        <h3>Lunch</h3>
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="entree.html">
+                        <img src="./Image/ENTReE.png" alt="Entree">
+                        <h3>Entrée</h3>
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="snacks.html">
+                        <img src="./Image/snacks.png" alt="Snacks">
+                        <h3>Quick Bites</h3>
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="wine.html">
+                        <img src="./Image/drinks.png" alt="Drinks">
+                        <h3>Drink Menu</h3>
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="dessert.html">
+                        <img src="./Image/deserts.png" alt="Desserts">
+                        <h3>Desserts</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breakfast Menu -->
+    <section class="menu-section">
+        <div class="container">
+            <h2 class="section-title serif-font">Adina Breakfast Options</h2>
+            
+            <div class="menu-columns">
+                <!-- Breakfast Options Column -->
+                <div class="menu-column">
+                    <h3 class="menu-column-title serif-font">Breakfast Options</h3>
+                    
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Acai Parfait Bowl</h4>
+                                <span class="item-price">₦12,000</span>
+                            </div>
+                            <p class="item-description">A bowl of Greek yogurt topped with a selection of cashew nuts, chia seeds, almonds, strawberries, blueberries, granola, coconut flakes, and drizzled with blueberry and strawberry puree. (ND)</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">American Breakfast</h4>
+                                <span class="item-price">₦18,500</span>
+                            </div>
+                            <p class="item-description">Pancakes/ Waffle /French Toast, Choice of Eggs, Sausages, Bacon, Grilled Tomatoes, Baked Beans.</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Breakfast for Everyone</h4>
+                                <span class="item-price">₦45,500</span>
+                            </div>
+                            <p class="item-description">A platter of Pancakes, French toast/ Waffles, sausages of choice, Bacon, Egg of choice and Baked Beans.</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Classic English Breakfast</h4>
+                                <span class="item-price">₦18,500</span>
+                            </div>
+                            <p class="item-description">Bread Toast, Eggs of Choice, Sausages, Mushrooms, Baked Beans and Grilled Tomatoes, Bacon.</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Gidi Breakfast Plate</h4>
+                                <span class="item-price">₦14,800</span>
+                            </div>
+                            <p class="item-description">Your choice of Akara or Moi-Moi with a choice of Custard, Akamu, Tapioca.</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Naija Breakfast Plate</h4>
+                                <span class="item-price">₦13,500</span>
+                            </div>
+                            <p class="item-description">A choice of either boiled/fried Yam or plantain with Egg Sauce.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sides Column -->
+                <div class="menu-column">
+                    <h3 class="menu-column-title serif-font">Sides</h3>
+                    
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Akara</h4>
+                                <span class="item-price">₦4,500</span>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Eggs of choice</h4>
+                                <span class="item-price">₦3,000</span>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">For the Love of Oats</h4>
+                                <span class="item-price">₦11,100</span>
+                            </div>
+                            <p class="item-description">A bowl of hot oat porridge topped with blueberries, grapes, coconut shavings, Honey, Cashew nuts, Toast. (N/D)</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Moi-Moi</h4>
+                                <span class="item-price">₦5,200</span>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Pancakes</h4>
+                                <span class="item-price">₦4,500</span>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Waffles</h4>
+                                <span class="item-price">₦4,500</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Banner -->
+   <section class="reservation-banner">
+        <div class="container">
+            <h3>Make a Reservation</h3>
+            <p>For banquet inquiries, please call our direct banquet line at (+234)9036172254. You may also email us at <a href="mailto:reservations@adina.com">reservations@adina.com</a>.</p>
+            <a href="Reservation.html" class="reservation-btn">Book A Table Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+      <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Address</h4>
+                    <p>55 General Edet Akpan Ave, Uyo, Akwa Ibom State.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Call</h4>
+                    <a href="tel:+2349036172254">(+234) 903 617 2254</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Email</h4>
+                    <a href="mailto:reservations@adina.com">reservations@adina.com</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Reserve</h4>
+                    <a href="Reservation.html" class="reservation-btn" style="padding: 10px 20px; margin-top: 10px;">Book A Table</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Follow</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/61573233752718/mentions/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@adinaperiperi/video/7521077808513158406" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/reel/DIbgmP5oWWJ/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=2349036172254&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Adina Restaurant & Lounge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

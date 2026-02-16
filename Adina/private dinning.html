@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Dining - Nestlagos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="private dinning.css">
+    <script src="private dinning.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+
+            <div class="logo">
+                <img src="./Image/WhatsApp Image 2026-01-20 at 18.35.47.jpeg" alt="Adina Logo" class="logo-img">
+            </div>
+            <div class="header-content">
+                <a href="home.html" class="logo">ADINA<span>UYO</span></a>
+                
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Breakfast.html">Menu</a></li>
+                        <li><a href="private dinning.html"class="active">Private Dining</a></li>
+                        <li><a href="Reservation.html">Reservations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <a href="contact.html" class="reservation-btn">Find a Table</a>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <h1>Private Dining</h1>
+            <p>
+                In a world of constant noise and curated digital glimpses, there is a profound luxury in turning inward. Private dining is that luxury an invitation to create a world within four walls where the focus narrows to the clink of glasses, the warmth of shared stories, and the unparalleled delight of a meal crafted for your moment alone.
+            </p>
+        </div>
+    </section>
+
+    <!-- Book Event Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title animate-fade-in">
+                <span class="pt-subtitle">Exclusive Experience</span>
+                <h2>Book An Event</h2>
+                <p>We create the perfect setting for your next event by blending an immersive atmosphere, exceptional service, and contemporary elegance into one seamless experience. Imagine a space where every detail is considered from the curated ambiance that sets your desired tone to the anticipatory service that ensures flawless execution, all within a framework of sophisticated, modern design. This holistic approach provides a versatile and elegant canvas, whether you are hosting an intimate family celebration, a milestone social gathering, or a pivotal corporate event like a holiday party or client dinner. We accommodate your vision completely, transforming it into a cohesive and memorable occasion where you can truly connect with your guests. Let us bring your moment to life.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dining Room Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="dining-room-section">
+                <div class="slider-container">
+                    <div class="slider-item" id="slider1" style="background-image: url('./Image/private\ red.jpg');"></div>
+                </div>
+                
+                <div class="room-details animate-fade-in animate-delay-1">
+                    <span class="pt-subtitle">CLASSICAL</span>
+                    <h3>The Main Dining Room</h3>
+                    <p>With its African-inspired décor, Adina boasts a captivating ambiance complemented by a fully stocked bar and an inviting outdoor seating area.</p>
+                    
+                    <ul class="pt-list">
+                        <li>
+                            <i class="fas fa-star-of-life"></i>
+                            <span class="list-content">Seated Capacity: 24 guests</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-star-of-life"></i>
+                            <span class="list-content">Cocktail Capacity: 15 guests</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section id="booking-form" class="section-padding">
+        <div class="container">
+            <div class="section-title animate-fade-in">
+                <span class="pt-subtitle">Reservation</span>
+                <h2>Private Event Inquiry</h2>
+                <p>Please fill out the form below and our event coordinator will contact you within 24 hours to discuss your private dining requirements.</p>
+            </div>
+            
+            <div class="booking-form animate-fade-in animate-delay-1">
+                <form id="private-dining-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="event-type">Event Type *</label>
+                            <select id="event-type" class="form-control" required>
+                                <option value="">Select Event Type</option>
+                                <option value="corporate">Corporate Meeting</option>
+                                <option value="birthday">Birthday Celebration</option>
+                                <option value="anniversary">Anniversary</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="guests">Number of Guests *</label>
+                            <input type="number" id="guests" class="form-control" min="1" max="90" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="date">Preferred Date *</label>
+                            <input type="date" id="date" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="message">Additional Details</label>
+                            <textarea id="message" class="form-control" rows="5" placeholder="Tell us about your event, dietary requirements, or special requests..."></textarea>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Submit Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+   <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Address</h4>
+                    <p>55 General Edet Akpan Ave, Uyo, Akwa Ibom State.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Call</h4>
+                    <a href="tel:+2349036172254">(+234) 903 617 2254</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Email</h4>
+                    <a href="mailto:reservations@adina.com">reservations@adina.com</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Reserve</h4>
+                    <a href="Reservation.html" class="reservation-btn" style="padding: 10px 20px; margin-top: 10px;">Book A Table</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Follow</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/61573233752718/mentions/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@adinaperiperi/video/7521077808513158406" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/reel/DIbgmP5oWWJ/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=2349036172254&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Adina Restaurant & Lounge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</body>
+</html>

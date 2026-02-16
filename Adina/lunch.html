@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunch Menu - Nestlagos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lunch.css">
+    <script src="lunch.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <img src="./Image/WhatsApp Image 2026-01-20 at 18.35.47.jpeg" alt="Adina Logo" class="logo-img">
+                <a href="home.html" class="logo">ADINA<span>UYO</span></a>
+                
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Breakfast.html" class="active">Menu</a></li>
+                        <li><a href="private dinning.html">Private Dining</a></li>
+                        <li><a href="Reservation.html">Reservations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <a href="contact.html" class="reservation-btn">Find a Table</a>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="divider-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                
+                <h1 class="hero-title serif-font">LUNCH</h1>
+                
+                <p class="hero-subtitle">Savor our midday specialties crafted with passion and premium ingredients</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Navigation -->
+    <section class="menu-categories">
+        <div class="container">
+            <div class="categories-grid">
+                <div class="category-card">
+                    <a href="Breakfast.html">
+                        <img src="./Image/breakfast.png" alt="Breakfast">
+                        <h3>Breakfast</h3>
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="lunch.html">
+                        <img src="./Image/lunch.png" alt="Lunch">
+                        <h3>Lunch</h3>
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="entree.html">
+                        <img src="./Image/ENTReE.png" alt="Entree">
+                        <h3>Entrée</h3>
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="snacks.html">
+                        <img src="./Image/snacks.png" alt="Snacks">
+                        <h3>Quick Bites</h3>
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="wine.html">
+                        <img src="./Image/drinks.png" alt="Drinks">
+                        <h3>Drink Menu</h3>
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="dessert.html">
+                        <img src="./Image/deserts.png" alt="Desserts">
+                        <h3>Desserts</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lunch Menu -->
+    <section class="menu-section">
+        <div class="container">
+            <h2 class="menu-section-title serif-font">Adina Lunch Delicacies</h2>
+            
+            <div class="menu-columns">
+                <!-- Main Courses Column -->
+                <div class="menu-column">
+                    <h3 class="menu-column-title serif-font">Main Courses</h3>
+                    
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Grilled Salmon Steak</h4>
+                                <span class="item-price">₦25,500</span>
+                            </div>
+                            <p class="item-description">Fresh Atlantic salmon grilled to perfection, served with lemon butter sauce, garlic mashed potatoes, and seasonal vegetables.</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Jollof Rice Supreme</h4>
+                                <span class="item-price">₦18,500</span>
+                            </div>
+                            <p class="item-description">Premium jollof rice cooked with assorted meats, served with fried plantains, coleslaw, and your choice of chicken or fish.</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Chicken Alfredo Pasta</h4>
+                                <span class="item-price">₦22,000</span>
+                            </div>
+                            <p class="item-description">Creamy Alfredo sauce with grilled chicken breast, tossed with fettuccine pasta and garnished with parsley and Parmesan.</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Beef Stroganoff</h4>
+                                <span class="item-price">₦24,500</span>
+                            </div>
+                            <p class="item-description">Tender strips of beef in a rich mushroom and cream sauce, served with buttered rice or mashed potatoes.</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Seafood Platter</h4>
+                                <span class="item-price">₦32,000</span>
+                            </div>
+                            <p class="item-description">Grilled prawns, calamari, fish fillet, and mussels served with lemon wedges, tartar sauce, and French fries.</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Vegetable Stir Fry</h4>
+                                <span class="item-price">₦16,500</span>
+                            </div>
+                            <p class="item-description">Seasonal vegetables stir-fried in teriyaki sauce with tofu or chicken, served over steamed jasmine rice.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Soups, Salads & Sides Column -->
+                <div class="menu-column">
+                    <h3 class="menu-column-title serif-font">Soups, Salads & Sides</h3>
+                    
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Pepper Soup Deluxe</h4>
+                                <span class="item-price">₦14,500</span>
+                            </div>
+                            <p class="item-description">Spicy Nigerian pepper soup with assorted meat or fish, served with yam or plantain.</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Caesar Salad</h4>
+                                <span class="item-price">₦12,500</span>
+                            </div>
+                            <p class="item-description">Fresh romaine lettuce with Caesar dressing, croutons, Parmesan cheese, and grilled chicken or shrimp.</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Adina House Salad</h4>
+                                <span class="item-price">₦10,500</span>
+                            </div>
+                            <p class="item-description">Mixed greens with cherry tomatoes, cucumbers, carrots, and your choice of dressing.</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Garlic Bread Basket</h4>
+                                <span class="item-price">₦6,500</span>
+                            </div>
+                            <p class="item-description">Freshly baked bread with garlic butter and herbs, served warm.</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Sweet Potato Fries</h4>
+                                <span class="item-price">₦8,500</span>
+                            </div>
+                            <p class="item-description">Crispy sweet potato fries with a side of spicy mayo or honey mustard dip.</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Grilled Vegetables</h4>
+                                <span class="item-price">₦9,500</span>
+                            </div>
+                            <p class="item-description">Seasonal vegetables grilled with olive oil and herbs, perfect as a side.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sandwiches & Burgers Section -->
+            <div style="margin-top: 80px;">
+                <h3 class="menu-column-title serif-font" style="margin-bottom: 40px;">Sandwiches & Burgers</h3>
+                
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h4 class="item-title">Classic Cheeseburger</h4>
+                            <span class="item-price">₦19,500</span>
+                        </div>
+                        <p class="item-description">Beef patty with cheddar cheese, lettuce, tomato, onion, and special sauce, served with French fries.</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h4 class="item-title">Grilled Chicken Sandwich</h4>
+                            <span class="item-price">₦18,000</span>
+                        </div>
+                        <p class="item-description">Marinated grilled chicken breast with avocado, bacon, lettuce, and garlic aioli on brioche bun.</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h4 class="item-title">Club Sandwich</h4>
+                            <span class="item-price">₦20,500</span>
+                        </div>
+                        <p class="item-description">Triple-decker sandwich with turkey, bacon, lettuce, tomato, and mayonnaise, served with fries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Banner -->
+    <section class="reservation-banner">
+        <div class="container">
+            <h3>Lunch Reservations</h3>
+            <p>Join us for a delightful lunch experience. For group bookings and special requests, please call our direct line at (+234)9036172254. You may also email us at <a href="mailto:reservations@adina.com">reservations@adina.com</a>.</p>
+            <a href="Reservation.html" class="reservation-btn">Reserve Your Table</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Address</h4>
+                    <p>55 General Edet Akpan Ave, Uyo, Akwa Ibom State.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Call</h4>
+                    <a href="tel:+2349036172254">(+234) 903 617 2254</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Email</h4>
+                    <a href="mailto:reservations@adina.com">reservations@adina.com</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Reserve</h4>
+                    <a href="Reservation.html" class="reservation-btn" style="padding: 10px 20px; margin-top: 10px;">Book A Table</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Follow</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/61573233752718/mentions/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@adinaperiperi/video/7521077808513158406" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/reel/DIbgmP5oWWJ/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=2349036172254&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Adina Restaurant & Lounge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

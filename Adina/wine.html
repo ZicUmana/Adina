@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drinks & Wine Menu - Adina</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="wine.css">
+    <script src="wine.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <img src="./Image/WhatsApp Image 2026-01-20 at 18.35.47.jpeg" alt="Adina Logo" class="logo-img">
+                <a href="home.html" class="logo">ADINA<span>UYO</span></a>
+                
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Breakfast.html" class="active">Menu</a></li>
+                        <li><a href="private dinning.html">Private Dining</a></li>
+                        <li><a href="Reservation.html">Reservations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <a href="#" class="reservation-btn">Find a Table</a>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="divider-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                
+                <h1 class="hero-title serif-font">DRINKS & WINE</h1>
+                
+                <p class="hero-subtitle">Sip on our exquisite selection of cocktails, spirits, and fine wines</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Navigation -->
+    <section class="menu-categories">
+        <div class="container">
+            <div class="categories-grid">
+                <div class="category-card">
+                    <a href="Breakfast.html">
+                        <img src="./Image/breakfast.png" alt="Breakfast">
+                        <h3>Breakfast</h3>
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="lunch.html">
+                        <img src="./Image/lunch.png" alt="Lunch">
+                        <h3>Lunch</h3>
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="entree.html">
+                        <img src="./Image/ENTReE.png" alt="Entree">
+                        <h3>Entrée</h3>
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="snacks.html">
+                        <img src="./Image/snacks.png" alt="Snacks">
+                        <h3>Quick Bites</h3>
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="wine.html">
+                        <img src="./Image/drinks.png" alt="Drinks">
+                        <h3>Drink Menu</h3>
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="dessert.html">
+                        <img src="./Image/deserts.png" alt="Desserts">
+                        <h3>Desserts</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Drinks & Wine Menu -->
+    <section class="menu-section">
+        <div class="container">
+            <h2 class="menu-section-title serif-font">Adina Drinks & Wine Selection</h2>
+            
+            <div class="menu-columns">
+                <!-- Cocktails & Spirits Column -->
+                <div class="menu-column">
+                    <h3 class="menu-column-title serif-font">Cocktails & Spirits</h3>
+                    
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Adina Sunset</h4>
+                                <span class="item-price">₦8,500</span>
+                            </div>
+                            <p class="item-description">A tropical blend of rum, pineapple juice, orange juice, and grenadine, garnished with a pineapple wedge and cherry.</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Classic Mojito</h4>
+                                <span class="item-price">₦7,500</span>
+                            </div>
+                            <p class="item-description">White rum, fresh lime juice, mint leaves, sugar, and soda water, served tall with crushed ice.</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Negroni</h4>
+                                <span class="item-price">₦9,500</span>
+                            </div>
+                            <p class="item-description">Gin, sweet vermouth, and Campari, served over ice with an orange twist.</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Whiskey Sour</h4>
+                                <span class="item-price">₦8,000</span>
+                            </div>
+                            <p class="item-description">Premium whiskey, fresh lemon juice, and simple syrup, shaken and served with a cherry.</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Espresso Martini</h4>
+                                <span class="item-price">₦9,000</span>
+                            </div>
+                            <p class="item-description">Vodka, coffee liqueur, and fresh espresso, shaken and served with coffee beans.</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Bloody Mary</h4>
+                                <span class="item-price">₦7,500</span>
+                            </div>
+                            <p class="item-description">Vodka, tomato juice, lemon juice, Worcestershire sauce, and spices, garnished with celery.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Wine Column -->
+                <div class="menu-column">
+                    <h3 class="menu-column-title serif-font">Wine Selection</h3>
+                    
+                    <!-- Red Wines -->
+                    <div class="wine-category">
+                        <h4>Red Wines</h4>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-title">Cabernet Sauvignon</h4>
+                                    <span class="item-price">₦25,000</span>
+                                </div>
+                                <p class="item-description">Full-bodied with notes of black currant, cedar, and spice. By the bottle.</p>
+                            </div>
+                            
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-title">Merlot</h4>
+                                    <span class="item-price">₦22,000</span>
+                                </div>
+                                <p class="item-description">Medium-bodied with plum, cherry, and herbal notes. By the bottle.</p>
+                            </div>
+                            
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-title">Pinot Noir</h4>
+                                    <span class="item-price">₦28,000</span>
+                                </div>
+                                <p class="item-description">Light to medium-bodied with red fruit and earthy notes. By the bottle.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- White Wines -->
+                    <div class="wine-category">
+                        <h4>White Wines</h4>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-title">Chardonnay</h4>
+                                    <span class="item-price">₦24,000</span>
+                                </div>
+                                <p class="item-description">Full-bodied with buttery, oaky notes and citrus undertones. By the bottle.</p>
+                            </div>
+                            
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-title">Sauvignon Blanc</h4>
+                                    <span class="item-price">₦21,000</span>
+                                </div>
+                                <p class="item-description">Crisp and refreshing with tropical fruit and citrus notes. By the bottle.</p>
+                            </div>
+                            
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-title">Riesling</h4>
+                                    <span class="item-price">₦19,500</span>
+                                </div>
+                                <p class="item-description">Aromatic with apple, peach, and floral notes. By the bottle.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Non-Alcoholic & Beer Section -->
+            <div style="margin-top: 80px;">
+                <h3 class="menu-column-title serif-font" style="margin-bottom: 40px;">Non-Alcoholic & Beer</h3>
+                
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h4 class="item-title">Fresh Fruit Juices</h4>
+                            <span class="item-price">₦4,500</span>
+                        </div>
+                        <p class="item-description">Orange, pineapple, watermelon, or mango juice, freshly squeezed.</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h4 class="item-title">Mocktail Collection</h4>
+                            <span class="item-price">₦6,500</span>
+                        </div>
+                        <p class="item-description">Virgin mojito, strawberry daiquiri, or tropical sunrise (pineapple, orange, grenadine).</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h4 class="item-title">Premium Beer Selection</h4>
+                            <span class="item-price">₦5,500</span>
+                        </div>
+                        <p class="item-description">Heineken, Guinness, Star, Trophy, or local craft beer options.</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h4 class="item-title">Soft Drinks & Water</h4>
+                            <span class="item-price">₦2,500</span>
+                        </div>
+                        <p class="item-description">Coke, Sprite, Fanta, Schweppes, or bottled water (still/sparkling).</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h4 class="item-title">Hot Beverages</h4>
+                            <span class="item-price">₦3,500</span>
+                        </div>
+                        <p class="item-description">Premium coffee, tea selection (green, black, herbal), or hot chocolate.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Wine by the Glass -->
+            <div style="margin-top: 80px;">
+                <h3 class="menu-column-title serif-font" style="margin-bottom: 40px;">Wine by the Glass</h3>
+                
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h4 class="item-title">House Red</h4>
+                            <span class="item-price">₦6,500</span>
+                        </div>
+                        <p class="item-description">A smooth, medium-bodied red blend perfect for any meal.</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h4 class="item-title">House White</h4>
+                            <span class="item-price">₦6,500</span>
+                        </div>
+                        <p class="item-description">A crisp, refreshing white wine ideal for warm days.</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h4 class="item-title">Sparkling Wine</h4>
+                            <span class="item-price">₦8,500</span>
+                        </div>
+                        <p class="item-description">Prosecco or Cava, perfect for celebrations.</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h4 class="item-title">Rosé</h4>
+                            <span class="item-price">₦7,500</span>
+                        </div>
+                        <p class="item-description">Dry rosé with notes of strawberry and citrus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Banner -->
+    <section class="reservation-banner">
+        <div class="container">
+            <h3>Wine Tasting Evenings</h3>
+            <p>Join us for our weekly wine tasting events. Experience curated selections paired with artisanal cheeses and charcuterie. For private wine tasting bookings, please call (+234)9036172254 or email <a href="mailto:reservations@adina.com">reservations@adina.com</a>.</p>
+            <a href="Reservation.html" class="reservation-btn">Reserve for Wine Tasting</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Address</h4>
+                    <p>55 General Edet Akpan Ave, Uyo, Akwa Ibom State.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Call</h4>
+                    <a href="tel:+2349036172254">(+234) 903 617 2254</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Email</h4>
+                    <a href="mailto:reservations@adina.com">reservations@adina.com</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Reserve</h4>
+                    <a href="Reservation.html" class="reservation-btn" style="padding: 10px 20px; margin-top: 10px;">Book A Table</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Follow</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/61573233752718/mentions/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@adinaperiperi/video/7521077808513158406" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/reel/DIbgmP5oWWJ/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=2349036172254&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Adina Restaurant & Lounge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

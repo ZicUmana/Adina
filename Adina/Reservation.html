@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations - Adina</title>
+    <link rel="icon" href="./Image/WhatsApp Image 2026-01-20 at 18.35.47.jpeg" type="image/jpeg">
+    <meta name="description" content="Make a reservation at Adina Restaurant.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Reservation.css">
+    <script src="Reservation.js" defer></script>
+</head>
+<body class="dark-theme">
+    <!-- Header -->
+   <header class="main-header">
+        <div class="container">
+
+            <div class="logo">
+                <img src="./Image/WhatsApp Image 2026-01-20 at 18.35.47.jpeg" alt="Adina Logo" class="logo-img">
+            </div>
+            <div class="header-content">
+                <a href="home.html" class="logo">ADINA<span>UYO</span></a>
+                
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Breakfast.html">Menu</a></li>
+                        <li><a href="private dinning.html">Private Dining</a></li>
+                        <li><a href="Reservation.html" class="active">Reservations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <a href="contact.html" class="reservation-btn">Find a Table</a>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <span class="close-menu">&times;</span>
+            <div class="mobile-logo">
+                <img src="./Image/WhatsApp Image 2026-01-20 at 18.35.47.jpeg" alt="Adina" width="120">
+            </div>
+        </div>
+        <nav class="mobile-navigation">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/menu/">Menu</a></li>
+                <li><a href="/private-dining/">Private Dining</a></li>
+                <li class="current"><a href="/reservation/">Reservations</a></li>
+                <li><a href="/contact/">Contact</a></li
+            </ul>
+        </nav>
+        <div class="mobile-contact">
+            <div class="info-item">
+                <a href="https://goo.gl/maps/example">
+                    <i class="fas fa-map-marker-alt"></i> 55 General Edet Akpan Ave, Uyo, Akwa Ibom State.
+                </a>
+            </div>
+            <div class="info-item">
+                <a href="tel:+234-903-617-2254">
+                    <i class="fas fa-phone"></i> (+234) 9036172254
+                </a>
+            </div>
+            <div class="info-item">
+                <a href="mailto:reservations@adina.com">
+                    <i class="far fa-envelope"></i> reservations@adina.com
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="content" class="site-content">
+        <section class="page-header">
+            <div class="container">
+                <div class="page-header-content">
+                    <h1 class="page-title">Reservations</h1>
+                    <div class="star-divider">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="page-description">
+                        For banquet inquiries, please call our direct banquet line at (+234)9036172254.<br>
+                        You can also E-mail us at <a href="mailto:reservations@adina.com">reservations@adina.com</a>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reservation Form -->
+        <section class="reservation-section" id="reservation-form">
+            <div class="container">
+                <div class="reservation-form-container">
+                    <div class="form-intro">
+                        <h2>Reservation Details</h2>
+                        <p>Please fill out the form below to secure your table</p>
+                    </div>
+
+                    <!-- Progress Bar -->
+                    <div class="reservation-progress">
+                        <div class="progress-step active" data-step="1">
+                            <div class="step-circle">1</div>
+                            <span class="step-label">Reservation Info</span>
+                        </div>
+                        <div class="progress-step" data-step="2">
+                            <div class="step-circle">2</div>
+                            <span class="step-label">Personal Info</span>
+                        </div>
+                        <div class="progress-step" data-step="3">
+                            <div class="step-circle">3</div>
+                            <span class="step-label">Confirmation</span>
+                        </div>
+                    </div>
+
+                    <!-- Multi-step Form -->
+                    <form id="reservation-form-element" class="multi-step-form">
+                        <!-- Step 1: Reservation Details -->
+                        <div class="form-step active" data-step="1">
+                            <div class="form-section">
+                                <h3>Reservation Details</h3>
+                                <div class="form-row">
+                                    <div class="form-field">
+                                        <label for="reservation-date">Date*</label>
+                                        <input type="date" id="reservation-date" name="date" required>
+                                    </div>
+                                    <div class="form-field">
+                                        <label for="reservation-time">Time*</label>
+                                        <select id="reservation-time" name="time" required>
+                                            <option value="">Select Time</option>
+                                            <option value="10:00">10:00 AM</option>
+                                            <option value="10:30">10:30 AM</option>
+                                            <option value="11:00">11:00 AM</option>
+                                            <option value="11:30">11:30 AM</option>
+                                            <option value="12:00">12:00 PM</option>
+                                            <option value="12:30">12:30 PM</option>
+                                            <option value="13:00">1:00 PM</option>
+                                            <option value="13:30">1:30 PM</option>
+                                            <option value="14:00">2:00 PM</option>
+                                            <option value="14:30">2:30 PM</option>
+                                            <option value="15:00">3:00 PM</option>
+                                            <option value="15:30">3:30 PM</option>
+                                            <option value="16:00">4:00 PM</option>
+                                            <option value="16:30">4:30 PM</option>
+                                            <option value="17:00">5:00 PM</option>
+                                            <option value="17:30">5:30 PM</option>
+                                            <option value="18:00">6:00 PM</option>
+                                            <option value="18:30">6:30 PM</option>
+                                            <option value="19:00">7:00 PM</option>
+                                            <option value="19:30">7:30 PM</option>
+                                            <option value="20:00">8:00 PM</option>
+                                            <option value="20:30">8:30 PM</option>
+                                            <option value="21:00">9:00 PM</option>
+                                            <option value="21:30">9:30 PM</option>
+                                            <option value="22:00">10:00 PM</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-field">
+                                        <label for="guest-count">Number of Guests*</label>
+                                        <select id="guest-count" name="party_size" required>
+                                            <option value="">Select Guests</option>
+                                            <option value="1">1 guest</option>
+                                            <option value="2">2 guests</option>
+                                            <option value="3">3 guests</option>
+                                            <option value="4">4 guests</option>
+                                            <option value="5">5 guests</option>
+                                            <option value="6">6 guests</option>
+                                            <option value="7">7 guests</option>
+                                            <option value="8">8 guests</option>
+                                            <option value="9">9 guests</option>
+                                            <option value="10">10 guests</option>
+                                            <option value="11">11 guests</option>
+                                            <option value="12">12 guests</option>
+                                            <option value="13">13 guests</option>
+                                            <option value="14">14 guests</option>
+                                            <option value="15">15 guests</option>
+                                            <option value="16">16 guests</option>
+                                            <option value="17">17 guests</option>
+                                            <option value="18">18 guests</option>
+                                            <option value="19">19 guests</option>
+                                            <option value="20">20 guests</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-navigation">
+                                <button type="button" class="btn btn-next" data-next="2">Next</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Personal Information -->
+                        <div class="form-step" data-step="2">
+                            <div class="form-section">
+                                <h3>Personal Information</h3>
+                                <div class="form-row">
+                                    <div class="form-field">
+                                        <label for="first-name">First Name*</label>
+                                        <input type="text" id="first-name" name="first_name" required>
+                                    </div>
+                                    <div class="form-field">
+                                        <label for="last-name">Last Name*</label>
+                                        <input type="text" id="last-name" name="last_name" required>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-field">
+                                        <label for="email">Email*</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                    <div class="form-field">
+                                        <label for="phone">Phone Number*</label>
+                                        <input type="tel" id="phone" name="phone" required>
+                                    </div>
+                                </div>
+                                <div class="form-field">
+                                    <label for="seating-preference">Seating Preference</label>
+                                    <select id="seating-preference" name="seating_preference">
+                                        <option value="No preference">No preference</option>
+                                        <option value="Private dining">Private dining</option>
+                                        <option value="Anniversary">Anniversary</option>
+                                        <option value="Birthday">Birthday</option>
+                                    </select>
+                                </div>
+                                <div class="form-field">
+                                    <label for="special-requests">Special Requests (Optional)</label>
+                                    <textarea id="special-requests" name="special_requests" rows="3" placeholder="Any dietary restrictions or special occasions?"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-navigation">
+                                <button type="button" class="btn btn-prev" data-prev="1">Previous</button>
+                                <button type="button" class="btn btn-next" data-next="3">Next</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Confirmation -->
+                        <div class="form-step" data-step="3">
+                            <div class="form-section">
+                                <h3>Reservation Summary</h3>
+                                <div class="reservation-summary" id="reservation-summary">
+                                    <!-- Summary will be populated by JavaScript -->
+                                </div>
+                            </div>
+                            <div class="form-navigation">
+                                <button type="button" class="btn btn-prev" data-prev="2">Previous</button>
+                                <button type="submit" class="btn btn-submit">Submit Reservation</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Success Message -->
+                    <div class="success-message" id="success-message" style="display: none;">
+                        <div class="success-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h2>Reservation Submitted!</h2>
+                        <p>Thank you for choosing Nest. We will contact you within 30 minutes to confirm your reservation details.</p>
+                        <button type="button" class="btn" id="new-reservation-btn">Make Another Reservation</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="contact-info-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-card-content">
+                            <h4><i class="fas fa-map-marker-alt"></i> Address</h4>
+                            <p>55 General Edet Akpan Ave, Uyo, Akwa Ibom State.</p>
+                            <p>Phone: <a href="tel:(+234)9036172254">(+234) 903 617 2254</a></p>
+                            <a href="https://maps.app.goo.gl/yW6GvkMXNGjCyxim8" class="btn btn-text" target="_blank">
+                                Get Directions <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-content">
+                            <h4><i class="fas fa-clock"></i> Opening Hours</h4>
+                            Monday – Saturday<br>
+                            9 am to 10 pm</p>
+                            Sunday<br>
+                            12 pm to 10 pm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+     <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Address</h4>
+                    <p>55 General Edet Akpan Ave, Uyo, Akwa Ibom State.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Call</h4>
+                    <a href="tel:+2349036172254">(+234) 903 617 2254</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Email</h4>
+                    <a href="mailto:reservations@adina.com">reservations@adina.com</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Reserve</h4>
+                    <a href="#" class="reservation-btn" style="padding: 10px 20px; margin-top: 10px;">Book A Table</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Follow</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/61573233752718/mentions/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@adinaperiperi/video/7521077808513158406" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/reel/DIbgmP5oWWJ/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=2349036172254&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Adina Restaurant & Lounge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

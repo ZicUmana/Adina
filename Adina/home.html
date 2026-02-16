@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adina - Fine Dining Restaurant</title>
+    <link rel="icon" href="./Image/WhatsApp Image 2026-01-20 at 18.35.47.jpeg" type="image/jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js" defer></script>
+</head>
+<body>
+   <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+
+            <div class="logo">
+                <img src="./Image/WhatsApp Image 2026-01-20 at 18.35.47.jpeg" alt="Adina Logo" class="logo-img">
+            </div>
+            <div class="header-content">
+                <a href="home.html" class="logo">ADINA<span>UYO</span></a>
+                
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="home.html" class="active">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Breakfast.html">Menu</a></li>
+                        <li><a href="private dinning.html">Private Dining</a></li>
+                        <li><a href="Reservation.html">Reservations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <a href="contact.html" class="reservation-btn">Find a Table</a>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="overlay" id="overlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <a href="#" class="logo">ADINA<span>UYO</span></a>
+            <button class="close-menu" id="closeMenu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <ul class="mobile-nav">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Private Dining</a></li>
+            <li><a href="#">Reservations</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        
+        <a href="#" class="reservation-btn" style="text-align: center; display: block;">Find a Table</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <h1>A Culinary Revolution With An Extraordinary Dining Experience</h1>
+            <p>Experience a symphony of flavors where passion meets perfection. Our chefs craft each dish with meticulous attention, blending tradition with innovation in a bold red and white ambiance</p>
+            <a href="Breakfast.html" class="reservation-btn2">Discover Menus</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about2">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <span class="section-subtitle">Experience The Redefining Dining Experience</span>
+                    <h3>A Journey to Taste</h3>
+                    <p>At Adina, we believe that dining is not just about food, it's an experience. Our red and white theme represents the passion we put into every dish and the purity of ingredients we source. Founded in 2023, our restaurant quickly became known for innovative cuisine that challenges conventions while respecting tradition. Our chefs travel the world to bring back inspiration, which they translate into unique creations. Every dish tells a story, from the vibrant red sauces that represent our passion to the pristine white elements that showcase ingredient quality. We invite you to join us on this culinary journey..</p>
+                    <a href="contact.html" class="reservation-btn">Make a Reservation</a>
+                </div>
+                <div class="about-image">
+                    <img src="./Image/home.avif" alt="Restaurant interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu">
+        <div class="container">
+            <div class="section-title">
+                <span class="section-subtitle">Discover our cuisine</span>
+                <h2>Our Menu</h2>
+                <p style="color: white;">Explore our diverse menu featuring African classics, continental delights, and exquisite beverages</p>
+            </div>
+            
+            <div class="menu-categories">
+                <div class="menu-category">
+                    <i class="fas fa-utensils"></i>
+                    <h4>African Classics</h4>
+                    <p>Savor the rich and robust flavors of African classics, including the iconic Jollof Rice, comforting Amala & Ewedu, and traditional Ofada.</p>
+                </div>
+                <div class="menu-category">
+                    <i class="fas fa-globe-africa"></i>
+                    <h4>Continental Delights</h4>
+                    <p>Embark on a culinary adventure with our continental menu featuring tantalizing delights like flavorful Jerk Chicken and irresistible pastas.</p>
+                </div>
+                <div class="menu-category">
+                    <i class="fas fa-cocktail"></i>
+                    <h4>Desserts & Drinks</h4>
+                    <p>Complete your meal with our tempting desserts and a selection of beverages, including fresh fruit juices, cocktails, and fine wines.</p>
+                </div>
+            </div>
+            
+            <div class="menu-items">
+                <div class="menu-item">
+                    <a href="Breakfast.html">
+                        <img src="./Image/breakfast.png" alt="Breakfast">
+                        <h5>Breakfast</h5>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="lunch.html">
+                        <img src="./Image/lunch.png" alt="Lunch">
+                        <h5>Lunch</h5>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="entree.html">
+                        <img src="./Image/ENTReE.png" alt="Entree">
+                        <h5>Entrée</h5>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="snacks.html">
+                        <img src="./Image/snacks.png" alt="Snacks">
+                        <h5>Quick Bites</h5>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="wine.html">
+                        <img src="./Image/drinks.png" alt="Drinks">
+                        <h5>Drink Menu</h5>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="dessert.html">
+                        <img src="./Image/deserts.png" alt="Desserts">
+                        <h5>Desserts</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <span class="section-subtitle">What our guests say</span>
+                <h2>Testimonials</h2>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial" id="testimonial1">
+                    <div class="testimonial-content">
+                        "Celebrating my birthday at Adina was an exceptional experience. The diverse and exquisite menu delighted every guest, catering to all tastes with culinary brilliance. Most importantly, the staff provided genuinely warm, attentive, and personalized service that made the entire event feel seamless and extraordinarily special. I cannot recommend them highly enough for a memorable celebration.."
+                    </div>
+                    <div class="testimonial-author">Feyisayo</div>
+                    <div class="testimonial-work">Banker</div>
+                </div>
+                
+                <div class="testimonial" id="testimonial2">
+                    <div class="testimonial-content">
+                        "Adina offers an exceptional fine-dining experience that excels in culinary artistry, ambiance, and service. The restaurant creates a sophisticated yet welcoming atmosphere, perfect for both special occasions and immersive gastronomic exploration. The menu is carefully curated, featuring inventive dishes that blend global techniques with premium ingredients. Standouts include seared scallops with cauliflower purée, herb-crusted rack of lamb, and pan-seared barramundi—each dish expertly prepared and full of layered flavor. Service is attentive, knowledgeable, and unobtrusive, enhancing the overall dining experience with thoughtful wine pairings and seamless pacing. In short, Nestlagos sets a high benchmark for modern dining in Lagos, delivering a memorable, flavor-driven experience that is well worth visiting for anyone passionate about food.."
+                    </div>
+                    <div class="testimonial-author">Amina</div>
+                    <div class="testimonial-work">Food Critic</div>
+                </div>
+                
+                <div class="testimonial" id="testimonial3">
+                    <div class="testimonial-content">
+                        "I'm delighted with my experience at Adina. Their services are impeccable, and the atmosphere made me feel right at home. It has become my go-to place for a delightful meal."
+                    </div>
+                    <div class="testimonial-author">Clifford</div>
+                    <div class="testimonial-work">Blogger</div>
+                </div>
+            </div>
+            
+            <div class="slider-dots">
+                <div class="dot active" data-slide="0"></div>
+                <div class="dot" data-slide="1"></div>
+                <div class="dot" data-slide="2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section class="Socials">
+        <div class="container">
+            <div class="section-title">
+                <span class="section-subtitle">Get a taste of Adina beyond the plate</span>
+                <h2>Socials</h2>
+            </div>
+            
+            <div class="instagram-grid">
+                <a href="https://www.instagram.com/reel/DIbgmP5oWWJ/" target="_blank">
+                    <div class="instagram-post">
+                        <img src="./Image/social 1.jpeg" alt="Food 1">
+                        <div class="instagram-overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/61573233752718/mentions/" target="_blank">
+                    <div class="instagram-post">
+                        <img src="./Image/social 2.avif" alt="Food 2">
+                        <div class="instagram-overlay">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.tiktok.com/@adinaperiperi/video/7521077808513158406" target="_blank">
+                    <div class="instagram-post">
+                        <img src="./Image/social 3.avif" alt="Food 3">
+                        <div class="instagram-overlay">
+                            <i class="fab fa-tiktok"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Address</h4>
+                    <p>55 General Edet Akpan Ave, Uyo, Akwa Ibom State.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Call</h4>
+                    <a href="tel:+2349036172254">(+234) 903 617 2254</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Email</h4>
+                    <a href="mailto:reservations@adina.com">reservations@adina.com</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Reserve</h4>
+                    <a href="Reservation.html" class="reservation-btn" style="padding: 10px 20px; margin-top: 10px;">Book A Table</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Follow</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/61573233752718/mentions/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@adinaperiperi/video/7521077808513158406" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/reel/DIbgmP5oWWJ/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=2349036172254&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Adina Restaurant & Lounge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

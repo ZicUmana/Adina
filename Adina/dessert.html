@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desserts Menu - Adina</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dessert.css">
+    <script src="dessert.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <img src="./Image/WhatsApp Image 2026-01-20 at 18.35.47.jpeg" alt="Adina Logo" class="logo-img">
+                <a href="home.html" class="logo">ADINA<span>UYO</span></a>
+                
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Breakfast.html" class="active">Menu</a></li>
+                        <li><a href="private dinning.html">Private Dining</a></li>
+                        <li><a href="Reservation.html">Reservations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <a href="#" class="reservation-btn">Find a Table</a>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="divider-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                
+                <h1 class="hero-title serif-font">DESSERTS</h1>
+                
+                <p class="hero-subtitle">Indulge in our sweet creations, the perfect ending to your dining experience</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Navigation -->
+    <section class="menu-categories">
+        <div class="container">
+            <div class="categories-grid">
+                <div class="category-card">
+                    <a href="Breakfast.html">
+                        <img src="./Image/breakfast.png" alt="Breakfast">
+                        <h3>Breakfast</h3>
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="lunch.html">
+                        <img src="./Image/lunch.png" alt="Lunch">
+                        <h3>Lunch</h3>
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="entree.html">
+                        <img src="./Image/ENTReE.png" alt="Entree">
+                        <h3>Entrée</h3>
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="snacks.html">
+                        <img src="./Image/snacks.png" alt="Snacks">
+                        <h3>Quick Bites</h3>
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="wine.html">
+                        <img src="./Image/drinks.png" alt="Drinks">
+                        <h3>Drink Menu</h3>
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="dessert.html">
+                        <img src="./Image/deserts.png" alt="Desserts">
+                        <h3>Desserts</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Desserts Menu -->
+    <section class="menu-section">
+        <div class="container">
+            <h2 class="menu-section-title serif-font">Adina Sweet Indulgences</h2>
+            
+            <div class="menu-columns">
+                <!-- Cakes & Pastries Column -->
+                <div class="menu-column">
+                    <h3 class="menu-column-title serif-font">Cakes & Pastries</h3>
+                    
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Chocolate Lava Cake</h4>
+                                <span class="item-price">₦8,500</span>
+                            </div>
+                            <p class="item-description">Warm chocolate cake with a molten center, served with vanilla ice cream and fresh berries.</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Tiramisu</h4>
+                                <span class="item-price">₦7,500</span>
+                            </div>
+                            <p class="item-description">Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream, dusted with cocoa.</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Red Velvet Cake</h4>
+                                <span class="item-price">₦6,500</span>
+                            </div>
+                            <p class="item-description">Moist red velvet cake layers with cream cheese frosting, garnished with white chocolate shavings.</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Lemon Tart</h4>
+                                <span class="item-price">₦6,000</span>
+                            </div>
+                            <p class="item-description">Tangy lemon curd in a buttery shortcrust pastry, topped with meringue and fresh mint.</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Carrot Cake</h4>
+                                <span class="item-price">₦6,500</span>
+                            </div>
+                            <p class="item-description">Spiced carrot cake with walnuts, topped with cream cheese frosting and candied carrots.</p>
+                            <div class="dietary-indicators">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ice Cream & Frozen Desserts Column -->
+                <div class="menu-column">
+                    <h3 class="menu-column-title serif-font">Ice Cream & Frozen Treats</h3>
+                    
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Artisanal Ice Cream</h4>
+                                <span class="item-price">₦4,500</span>
+                            </div>
+                            <p class="item-description">Two scoops of our homemade ice cream. Choose from vanilla bean, chocolate, strawberry, or mango.</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Sorbet Trio</h4>
+                                <span class="item-price">₦5,500</span>
+                            </div>
+                            <p class="item-description">Three refreshing sorbets: lemon, raspberry, and passion fruit, served with fresh fruit.</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Affogato</h4>
+                                <span class="item-price">₦5,000</span>
+                            </div>
+                            <p class="item-description">Vanilla ice cream drowned in a shot of hot espresso, served with amaretto biscuits.</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Banana Split</h4>
+                                <span class="item-price">₦7,500</span>
+                            </div>
+                            <p class="item-description">Three scoops of ice cream (vanilla, chocolate, strawberry) with banana, chocolate sauce, whipped cream, and nuts.</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Fruit Parfait</h4>
+                                <span class="item-price">₦6,000</span>
+                            </div>
+                            <p class="item-description">Layers of Greek yogurt, granola, and fresh seasonal fruits with honey drizzle.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Nigerian Desserts Section -->
+            <div style="margin-top: 80px;">
+                <h3 class="menu-column-title serif-font" style="margin-bottom: 40px;">Nigerian Sweet Treats</h3>
+                
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h4 class="item-title">Chin Chin</h4>
+                            <span class="item-price">₦3,500</span>
+                        </div>
+                        <p class="item-description">Crispy fried dough snacks lightly sweetened and spiced with nutmeg, perfect with tea or coffee.</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h4 class="item-title">Puff Puff Deluxe</h4>
+                            <span class="item-price">₦4,500</span>
+                        </div>
+                        <p class="item-description">Deep-fried sweet dough balls served with chocolate dipping sauce and powdered sugar.</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h4 class="item-title">Plantain Fritters</h4>
+                            <span class="item-price">₦5,500</span>
+                        </div>
+                        <p class="item-description">Sweet ripe plantain fritters served with vanilla ice cream and caramel sauce.</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h4 class="item-title">Coconut Candy</h4>
+                            <span class="item-price">₦4,000</span>
+                        </div>
+                        <p class="item-description">Traditional Nigerian coconut candy made with fresh coconut, sugar, and spices.</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h4 class="item-title">Pap & Akara</h4>
+                            <span class="item-price">₦5,500</span>
+                        </div>
+                        <p class="item-description">A sweet twist on a classic - creamy pap served with honey-drizzled akara (bean cakes).</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Dessert Platters & Sharing -->
+            <div style="margin-top: 80px;">
+                <h3 class="menu-column-title serif-font" style="margin-bottom: 40px;">Dessert Platters & Sharing</h3>
+                
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h4 class="item-title">Adina Dessert Platter</h4>
+                            <span class="item-price">₦15,500</span>
+                        </div>
+                        <p class="item-description">A selection of our signature desserts: chocolate lava cake, tiramisu, sorbet trio, and puff puff. Serves 2-3.</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h4 class="item-title">Chocolate Fondue</h4>
+                                <span class="item-price">₦12,500</span>
+                            </div>
+                            <p class="item-description">Rich melted chocolate served with strawberries, bananas, marshmallows, biscotti, and pound cake for dipping. Serves 2-3.</p>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Cheese Board</h4>
+                                <span class="item-price">₦14,500</span>
+                            </div>
+                            <p class="item-description">Selection of artisanal cheeses with honey, nuts, dried fruits, and crackers. Perfect with dessert wine.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hot Drinks & Pairings -->
+                <div style="margin-top: 80px;">
+                    <h3 class="menu-column-title serif-font" style="margin-bottom: 40px;">Hot Drinks & Pairings</h3>
+                    
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Dessert Coffee Selection</h4>
+                                <span class="item-price">₦4,500</span>
+                            </div>
+                            <p class="item-description">Irish coffee, Spanish coffee, or caramel macchiato. Perfect dessert companions.</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Tea Service</h4>
+                                <span class="item-price">₦3,500</span>
+                            </div>
+                            <p class="item-description">Selection of premium teas: English breakfast, chamomile, peppermint, or chai.</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Hot Chocolate</h4>
+                                <span class="item-price">₦4,000</span>
+                            </div>
+                            <p class="item-description">Rich, creamy hot chocolate topped with whipped cream and chocolate shavings.</p>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-title">Dessert Wine Flight</h4>
+                                <span class="item-price">₦9,500</span>
+                            </div>
+                            <p class="item-description">Three 2oz pours of dessert wines: port, sauternes, and moscato d'asti.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Banner -->
+    <section class="reservation-banner">
+        <div class="container">
+            <h3>Sweet Celebrations</h3>
+            <p>Celebrate your special occasions with our custom dessert platters and birthday cakes. Perfect for birthdays, anniversaries, or any sweet celebration. Contact us for custom dessert orders at (+234)9036172254 or email <a href="mailto:reservations@adina.com">reservations@adina.com</a>.</p>
+            <a href="Reservation.html" class="reservation-btn">Book for Celebration</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Address</h4>
+                    <p>55 General Edet Akpan Ave, Uyo, Akwa Ibom State.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Call</h4>
+                    <a href="tel:+2349036172254">(+234) 903 617 2254</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Email</h4>
+                    <a href="mailto:reservations@adina.com">reservations@adina.com</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Reserve</h4>
+                    <a href="Reservation.html" class="reservation-btn" style="padding: 10px 20px; margin-top: 10px;">Book A Table</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Follow</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/61573233752718/mentions/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@adinaperiperi/video/7521077808513158406" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/reel/DIbgmP5oWWJ/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=2349036172254&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Adina Restaurant & Lounge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
